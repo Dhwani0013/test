@@ -1,0 +1,78 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+   
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+ 
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+   margin:15px;
+ position:absolute;
+    transition: .5s ease;
+    top: 80%;
+    left: 50%;
+
+  
+}
+
+.next {
+  background-color: #4CAF50;
+  color: white;
+  margin:15px;
+  position:absolute;
+    transition: .5s ease;
+    top: 80%;
+    right: 50%;
+
+  
+
+}
+
+.round {
+  border-radius: 50%;
+}
+</style>
+</head>
+<body>
+
+<img src="tri1.jpg" alt="Al_game" style="width:500px; height:500px; float:left;"></img>
+<script>
+function f3() {
+
+  var v1=document.f1.n1.value;
+  if(v1!=5) {
+	alert("Ans is wrong!! please try again");
+	document.f1.n1.focus();
+	return false;
+	  } 
+else{
+	alert("Great!!Your answer is correct ");
+	}
+	
+ }
+</script>
+
+<form  name="f1" method="post">
+<br><br><br>
+<p style="font-size:25px" align=center><b>Which is the correct option?</b></p>
+<center><input type="text" name="n1"></input><br><br>
+<input type="submit" value="Submit" onclick="f3()"></center>
+</form>
+<a href="p5.html" class="previous round">&#8250;</a>
+<a href="p3.html" class="next round">&#8249;</a>
+
+<p id="p"></p>
+</body>
+</html>

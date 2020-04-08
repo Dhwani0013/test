@@ -1,0 +1,29 @@
+body{
+	background-image:url("puzzle6.png");
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	position: relative;
+
+	
+}
+
+p{
+	
+	margin:50px;
+	padding-top: 50px;
+ 	text-align:center;
+	font-size:100px;
+	color:#588bb0;
+	font-style:italic;
+
+
+}
+button{
+	text-align:center;
+	border-radius: 50%;
+	width: 100px;
+ 	 height: 50px;
+	background-color:#bad4e6;
+
+}

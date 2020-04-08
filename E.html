@@ -1,0 +1,88 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+   
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+ 
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+   margin:15px;
+ position:absolute;
+    transition: .5s ease;
+    top: 80%;
+    left: 50%;
+
+  
+}
+
+.next {
+  background-color: #4CAF50;
+  color: white;
+  margin:15px;
+  position:absolute;
+    transition: .5s ease;
+    top: 80%;
+    right: 50%;
+
+  
+
+}
+
+.round {
+  border-radius: 50%;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+ 
+
+
+</style>
+</head>
+<body>
+
+<img src="img_E.jpg" alt="banana_game" style="width:500px; height:500px; float:right;"></img>
+<script>
+function f3() {
+
+  var v1=document.f1.n1.value;
+  if(v1!="envelope") {
+	alert("Ans is wrong!! please try again");
+	document.f1.n1.focus();
+	return false;
+	  } 
+else{
+	alert("Great!!Your answer is correct ");
+	}
+	
+ }
+</script>
+<form  name="f1" method="post">
+<br><br><br>
+     <img src="emoji.png" alt="emoji" style="width:10%;height:20%"><br><br>
+  
+
+<center><input type="text" name="n1"></input><br><br>
+<input type="submit" value="Submit" onclick="f3()"></center>
+</form>
+
+<a href="p10.html" class="previous round">&#8250;</a>
+<a href="p7.html" class="next round">&#8249;</a>
+  
+
+</body>
+</html></html>
